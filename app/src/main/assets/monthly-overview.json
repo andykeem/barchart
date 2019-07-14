@@ -1,0 +1,14 @@
+[
+    {
+        month: "May",
+        spend: "100"
+    },
+    {
+        month: "Jun",
+        spend: "300"
+    },
+    {
+        month: "Jul",
+        spend: "200"
+    }
+]

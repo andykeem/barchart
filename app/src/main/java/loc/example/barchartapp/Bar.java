@@ -13,6 +13,22 @@ public class Bar {
         this.spend = spend;
     }
 
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getSpend() {
+        return spend;
+    }
+
+    public void setSpend(String spend) {
+        this.spend = spend;
+    }
+
     public RectF getRect() {
         return rect;
     }

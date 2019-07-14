@@ -1,14 +1,14 @@
 [
     {
-        month: "May",
-        spend: "100"
+        month: "Jan",
+        spend: "1589.97"
     },
     {
-        month: "Jun",
-        spend: "300"
+        month: "Feb",
+        spend: "2196.33"
     },
     {
-        month: "Jul",
-        spend: "200"
+        month: "Mar",
+        spend: "1703.10"
     }
 ]

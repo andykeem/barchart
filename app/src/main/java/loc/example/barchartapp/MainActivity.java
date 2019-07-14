@@ -27,22 +27,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 //        List<Float> spends = Arrays.asList(1589.97f, 2196.33f, 1703.10f);
-
-        List<Float> spends = Arrays.asList(100f, 300f, 200f);
-
+//        List<Float> spends = Arrays.asList(100f, 300f, 200f);
 //        List<Float> spends = Arrays.asList(200f, 600f, 1000f, 300f, 800f, 500f);
 
         mBarChart = findViewById(R.id.bar_chart);
-        mBarChart.setSpends(spends);
 
         String json = readMonthlyOverviewJson();
-        List<Bar> bars = getBarsByJson(json);
+
+        List<Bar> bars = new ArrayList<>();
+        getBarsByJson(json, bars);
 
         mBarChart.setBars(bars);
     }
 
-    private List<Bar> getBarsByJson(String json) {
-        List<Bar> bars = new ArrayList<>();
+    private List<Bar> getBarsByJson(String json, List<Bar> bars) {
         try {
             JSONArray jsonArr = (JSONArray) new JSONTokener(json).nextValue();
             int size = jsonArr.length();
